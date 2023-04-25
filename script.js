@@ -14,7 +14,8 @@ function divide(a,b) {
     }
     let divided = a/b
     if(!Number.isInteger(divided)) {
-        divided.toFixed(2)
+        console.log('NOT WHOLE NUMBER');
+        return divided.toFixed(2);
     }
     return divided;
 }
