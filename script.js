@@ -12,8 +12,11 @@ function divide(a,b) {
     if (a === 0 || b === 0) {
         alert("OH SO YOU THINK YOU'RE FUNNY DO YOU?! TRY AGAIN");
     }
-    let divide = a/b
-    return divide.toFixed(2);
+    let divided = a/b
+    if(!Number.isInteger(divided)) {
+        divided.toFixed(2)
+    }
+    return divided;
 }
 function operate(op,a,b) {
     const operator = op;
