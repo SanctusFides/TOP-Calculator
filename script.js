@@ -52,8 +52,6 @@ let numB;
 let focusA = true;
 
 
-
-
 // BUTTON LOGIC SECTION
 // Sets up the number buttons to input their values(from the ids) into the screen window
 const digitButtons = document.querySelectorAll('.digit-button');
@@ -86,7 +84,6 @@ op_array.forEach(operator => {
         }
     });
 })
-
 
 // Clears the screen when clear button is clicked
 const clearButton = document.querySelector('.clear-button');
@@ -123,8 +120,6 @@ equalButton.addEventListener('click', () => {
             screenBottomText.textContent =  operate("/", Number(numA), Number(numB));
             focusA = true;
         }
-
     }
-
 })
 
