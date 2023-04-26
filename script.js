@@ -45,13 +45,13 @@ function operate(op,a,b) {
 const screenTopText = document.querySelector('.screentop');
 const screenBottomText = document.querySelector('.screenbottom');
 
-// topEquation is used to store text for the topscreen for manpulation - including operators which the Equals function checks for
+// topEquation is used to store text for the topscreen for manpulation - including operators which the Equals func checks for
 // NumA/B are used for individual value storing
 let topEquation;
 let numA;
 let numB;
-// FocusA switches the tracks from the first variable to the second. Also keeps equals from being accessible until after
-// an operator has been selected and prevents it from being clicked after they already have clicked equals once
+// FocusA switches the tracks from the first variable to the second. Also keeps Equals button from being accessible until after
+// an operator has been selected - preventing it from being clicked after they already have clicked equals once
 let focusA = true;
 
 
