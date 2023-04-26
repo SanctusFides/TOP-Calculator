@@ -45,7 +45,7 @@ function operate(op,a,b) {
 const screenTopText = document.querySelector('.screentop');
 const screenBottomText = document.querySelector('.screenbottom');
 
-// Top Equation is used to store text for the topscreen for manpulation - including operators which equals checks for
+// topEquation is used to store text for the topscreen for manpulation - including operators which the Equals function checks for
 // NumA/B are used for individual value storing
 let topEquation;
 let numA;
@@ -70,11 +70,6 @@ const operatorButtons = document.querySelectorAll('.op-button');
 let op_array = [...operatorButtons];
 op_array.forEach(operator => {
     operator.addEventListener('click', () => {
-        // this all works, I just want to see if I can rework it to be simpler with 3 variables instead of textcontets
-        // numA = screenBottomText.textContent;
-        // topEquation = `${numA} ${operator.id}`;
-        // screenBottomText.textContent = "";
-        // screenTopText.textContent = topEquation;
         if (focusA) {
             numA = screenBottomText.textContent;
             topEquation = `${numA} ${operator.id}`;
